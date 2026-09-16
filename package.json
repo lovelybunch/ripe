@@ -1,0 +1,58 @@
+{
+  "name": "ripeness",
+  "version": "0.1.0",
+  "description": "Ripeness \u2014 knock before you open it. Pick a role, toggle sources, find out what your context can actually support, and what you can safely automate.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "ripe": "./dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.34.5",
+  "files": [
+    "dist",
+    "roles",
+    "skills",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "test": "vitest run",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "ripe": "node --import tsx src/cli.ts",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://coconut.dev/evals",
+  "bugs": "https://github.com/lovelybunch/ripe/issues",
+  "keywords": [
+    "coconut",
+    "context",
+    "evals",
+    "evaluation",
+    "agents",
+    "llm",
+    "claude",
+    "readiness",
+    "rag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovelybunch/ripe.git"
+  }
+}
