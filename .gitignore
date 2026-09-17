@@ -1,0 +1,8 @@
+node_modules/
+dist/
+runs/
+corpora/
+.env
+*.local.json
+.DS_Store
+packages/        # built .skill/.zip bundles; shipped in the npm tarball, served via jsDelivr
