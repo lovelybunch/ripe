@@ -76,7 +76,7 @@ describe("buildRegistry over a real transcript", () => {
 
   it("records the pages that were actually opened", () => {
     const read = registry.filter((r) => r.access === "read" && !r.isError).map((r) => r.path);
-    expect(read).toContain("/Users/bluer/Developer/coconut-evals/corpora/files/products/index.md");
+    expect(read).toContain("/home/example/ripe/corpora/files/products/index.md");
     expect(read.length).toBeGreaterThan(0);
   });
 
