@@ -414,6 +414,7 @@ function cmdSkills(): number {
   console.log(`Bundled skills live at:\n  ${dir}\n`);
   console.log(`Claude Code (this machine):\n  cp -r ${dir}/context-readiness ~/.claude/skills/\n  cp -r ${dir}/ripeness ~/.claude/skills/\n`);
   console.log(`Claude Desktop:\n  Settings → Skills → Add, and point it at the same two folders.\n`);
+  console.log(`Claude.ai / Desktop, one click (Settings → Skills → Add → upload):\n  https://cdn.jsdelivr.net/npm/ripeness/packages/context-readiness.skill\n  https://cdn.jsdelivr.net/npm/ripeness/packages/ripeness.skill\n`);
   console.log(`context-readiness  one conversation, no setup — start here\nripeness           wraps this CLI conversationally — go deeper`);
   return EXIT.ok;
 }

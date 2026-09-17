@@ -33,6 +33,21 @@ Two skills ship in `skills/`: **`context-readiness`** (Claude Desktop — one
 conversation, no setup, a self-graded map) and **`ripe`** (wraps this CLI
 conversationally). Both read the same role files, so their numbers line up.
 
+## The two skills
+
+Both ship in this package, and as one-click bundles you can import into Claude
+Desktop or Claude.ai (Settings → Skills → Add → upload the `.skill` file):
+
+| skill | bundle | what it is |
+|---|---|---|
+| **Context Readiness** | [context-readiness.skill](https://cdn.jsdelivr.net/npm/ripeness/packages/context-readiness.skill) | start here — one conversation, no setup, a self-graded map |
+| **Ripeness** | [ripeness.skill](https://cdn.jsdelivr.net/npm/ripeness/packages/ripeness.skill) | go deeper — wraps `ripe` conversationally |
+
+Or, with the package installed, `ripe skills` prints where they are and how to
+copy them into Claude Code. The bundles are plain zips with the skill folder at
+the top level; `.zip` twins sit alongside for anything that dislikes the
+extension.
+
 ## Three steps
 
 ```bash

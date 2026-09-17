@@ -1,6 +1,6 @@
 {
   "name": "ripeness",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ripeness \u2014 knock before you open it. Pick a role, toggle sources, find out what your context can actually support, and what you can safely automate.",
   "license": "Apache-2.0",
   "type": "module",
@@ -15,6 +15,7 @@
     "dist",
     "roles",
     "skills",
+    "packages",
     "README.md",
     "LICENSE",
     ".env.example"
@@ -24,7 +25,8 @@
     "test": "vitest run",
     "lint": "tsc --noEmit -p tsconfig.json",
     "ripe": "node --import tsx src/cli.ts",
-    "prepublishOnly": "pnpm build && pnpm test"
+    "prepublishOnly": "pnpm build && pnpm package:skills && pnpm test",
+    "package:skills": "./scripts/package-skills.sh"
   },
   "dependencies": {
     "yaml": "^2.5.0"
