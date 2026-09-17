@@ -29,7 +29,8 @@ looks through what's connected, and hands back a one-page report:
 - **A plan**: the five to seven pages that would establish one current version
   of the essentials, where each one's content comes from, and who should own it
 
-It's read-only. It never invents a source into the score. And it's honest about
+Read-only by default. It reads what is connected, and asks before it writes
+anything back. It never invents a source into the score. And it's honest about
 what it is: a map, self-graded in one conversation — a good place to start, not
 a benchmark.
 
