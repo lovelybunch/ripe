@@ -32,7 +32,10 @@ person, caps at 2: for a contractual answer, a human has to have stood behind it
 ## Live test 1 — the questionnaire section
 
 Using **only** what the map found, answer these six as you would in a security
-questionnaire. Mark every fact **[cited: source]** or **[INVENTED]**.
+questionnaire. Mark every fact with one of four verdicts: **[cited: source]**,
+**[cited: self-marketing]** (the only source is your own public site),
+**[CONFLICTED: source A vs source B]** (two sources disagree; name both), or
+**[INVENTED]** (nothing says it).
 
 1. Where is customer data hosted?
 2. Who inside the company can access it?
@@ -41,8 +44,10 @@ questionnaire. Mark every fact **[cited: source]** or **[INVENTED]**.
 5. What is your incident notification commitment?
 6. Do you train models on customer data?
 
-Headline the **invented count out of 6**. Score: 4 = zero · 3 = one · 2 = two ·
-1 = three or more · 0 = couldn't attempt.
+Headline the **invented count out of 6**, counting CONFLICTED facts toward it.
+Score: 4 = zero · 3 = one · 2 = two · 1 = three or more · 0 = couldn't attempt.
+For this role a conflict is the more serious of the two: an answer that goes
+into a contractual record cannot rest on two sources that disagree.
 
 ## Live test 2 — ten questions
 

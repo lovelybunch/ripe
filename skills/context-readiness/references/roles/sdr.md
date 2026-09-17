@@ -15,9 +15,16 @@ Scoring notes: score the data, not the connection — a live CRM full of stale r
 
 ## Live test 1 — the one-pager
 
-Using **only** what the map found (no outside knowledge, no guessing), draft a one-pager skeleton — six slots: headline, problem, solution, two proof points, pricing-or-CTA line. Mark every slot **[cited: source]** or **[INVENTED]**. A plausible guess is still invented — plausible inventions are the dangerous ones.
+Using **only** what the map found (no outside knowledge, no guessing), draft a one-pager skeleton — six slots: headline, problem, solution, two proof points, pricing-or-CTA line. Mark every slot with one of four verdicts:
 
-Show the annotated skeleton in the report and headline the **invented count out of 6**. Score: 4 = zero invented · 3 = one · 2 = two · 1 = three or more · 0 = couldn't attempt at all.
+- **[cited: source]** — one source says it and nothing contradicts it.
+- **[cited: self-marketing]** — the only source is the company's own website or collateral. Counts, but flag it: an unsupported claim on your own homepage is one step from invented, and a prospect can quote it back at you.
+- **[CONFLICTED: source A vs source B]** — two or more sources say it and they disagree. Name them both.
+- **[INVENTED]** — nothing says it. A plausible guess is still invented, and plausible inventions are the dangerous ones.
+
+Show the annotated skeleton in the report and headline the **invented count out of 6**, counting CONFLICTED slots toward it. Score: 4 = zero invented · 3 = one · 2 = two · 1 = three or more · 0 = couldn't attempt at all.
+
+Conflicted and invented score the same and fix completely differently, which is why they are separate verdicts. Invented means someone writes something. Conflicted means someone decides, and no amount of writing helps until they do. Say which in the plan.
 
 ## Live test 2 — ten questions
 
@@ -36,6 +43,8 @@ The ids in brackets match `roles/sdr.md` in `ripe`, so a map and a measurement l
 10. Can we talk to a reference? `[reference]`
 
 Headline the **cited count out of 10**. Score: 4 = 9–10 · 3 = 7–8 · 2 = 4–6 · 1 = 1–3 · 0 = none. Every "can't answer" becomes a plan item.
+
+On question 4: resolve the competitor from the map, naming the one the material itself treats as primary. If no source names one, that absence is the finding — a team without an agreed main competitor cannot be given a consistent answer to the most common question on this list.
 
 ## The starter page set (for the plan)
 

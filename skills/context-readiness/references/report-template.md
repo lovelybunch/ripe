@@ -5,6 +5,11 @@ About one page before the detail. Write findings in the reader's own material �
 inconsistent". Keep finding numbers stable across re-runs so progress is visible.
 Findings and the plan come first; the inventory and the scores are detail.
 
+To hold that length: in "What you have", list only the sources that **changed a
+score**, and summarise the rest in one line beneath the table ("six further
+connectors were checked and hold nothing role-relevant"). A full inventory of
+everything you touched is a log, not a finding.
+
 ```markdown
 # Context Readiness — <Company> — <Role>
 <date> · run <n>
@@ -44,17 +49,19 @@ Findings and the plan come first; the inventory and the scores are detail.
 
 ## Scores
 
-| Dimension | 0–4 | Why (with source) |
-|---|---|---|
+| Dimension | 0–4 | Why (with source) | Reaches, if the plan item lands |
+|---|---|---|---|
 <six rows>
 
 ## Couldn't check
 
-<Tools needing sign-in and anything excluded, with what each might add. Never guessed into the score.>
+<Two groups, kept apart. **Needed sign-in or approval:** with what each might add.
+**Connected but not loaded in this session:** listed by name, since the next run may
+reach them. Then anything else excluded. Never guessed into the score.>
 
 ## The two tests (detail)
 
-<Live test 1, each slot [cited: …] or [INVENTED].>
+<Live test 1, each slot [cited: …], [cited: self-marketing], [CONFLICTED: A vs B] or [INVENTED].>
 <Live test 2, each question with verdict and source.>
 
 ---

@@ -35,7 +35,10 @@ discover. Ten minutes, one conversation.
 
 ## Ask — the only step that needs the user
 
-Which role? Offer the two bundled ones and default to the first:
+Which role? Enumerate `references/roles/`, offer what is there, and wait for an
+answer. Do not default when more than one role exists: assessing the wrong role
+produces a confident, well-cited, useless report. If only one role file is
+present, state that assumption in a line and proceed without asking.
 
 - **SDR** — sales development: what we sell, to whom, at what price, against
   whom, with what proof.
@@ -46,8 +49,15 @@ Also the company website, if it isn't evident. Then stop asking.
 
 ## Look
 
-Four quick sweeps. For each source record: status (working / needs sign-in /
-empty), what role-relevant content it holds, and how fresh it is. Don't crawl —
+If a prior report exists at the path in **Deliver**, read it first and carry its
+finding numbers forward.
+
+Four quick sweeps. For each source record: status, what role-relevant content it
+holds, and how fresh it is. Status has four values, not three: **working**,
+**needs sign-in**, **connected but not loaded in this session** (the account
+lists it; no tools for it are available here), and **connected but empty**. The
+last two get confused and are different problems: one is a session limitation
+you may be able to lift, the other is a fact about the source. Don't crawl —
 sample three to five relevant items per source and note their dates.
 
 - **Connected tools** — one cheap read per connector (a whoami, a list, a small
@@ -59,7 +69,11 @@ sample three to five relevant items per source and note their dates.
   by proof? Does it say why-you, not just what?
 - **Cross-check** — a conflict between the website and internal material, or
   between two internal documents, is the single most valuable finding. Name the
-  actual documents that disagree.
+  actual documents that disagree. Watch in particular for a **motion the
+  material does not describe**: if the pipeline, campaigns or recent records
+  show the team selling in a way the positioning and ICP pages never mention,
+  that gap is worth more than any individual stale page. Report it; don't ask
+  about it up front.
 
 ## Score
 
@@ -77,6 +91,15 @@ The two live tests are mandatory and their counts go in the headline. An
 inventory says what is on the shelf; the tests show whether the job can be done
 from it.
 
+Two caps apply to every role, on top of anything in the role file:
+
+- **Reachability caps a dimension at 3.** Content that lives only outside the
+  role's own space, or only somewhere that role would never think to look, is
+  not ready material however good it is. Name where it actually lives; that is
+  usually the whole fix.
+- **A citation to the company's own marketing site is the weakest kind.** It
+  counts, but mark it, and never let a dimension reach 4 on self-marketing alone.
+
 ## Plan
 
 For each weak dimension, one action: **the page to write** (a short title),
@@ -84,6 +107,11 @@ For each weak dimension, one action: **the page to write** (a short title),
 is already written somewhere) → **extract** (it is in a tool) → **interview**
 (it is in someone's head; write the exact questions) → **decide** (it needs an
 owner's call; name the decision, don't make it) — and **who should own it**.
+
+Also state **the score that dimension reaches if the action lands**. This turns
+the number from a grade into a target and makes the next run measurable. Where
+one decision unblocks several dimensions at once, say so and say what the total
+becomes: that is usually the fastest fix on the page.
 
 Two moves. **This week:** the 5–7 pages that establish one current version of
 the essentials, resolving every conflict the map found (mark superseded versions
@@ -97,8 +125,11 @@ Write the report from `references/report-template.md`, tl;dr first. Then offer
 — and wait for a yes — to:
 
 1. **Create the "this week" pages in Coconut** as drafts with proposed owners.
-2. **Save the report into Coconut**, so a re-run shows progress against the
-   same finding numbers.
+2. **Save the report into Coconut** at `company/context-readiness/<role>`,
+   replacing the prior run's page and appending the previous tl;dr to a run log
+   at the foot of it. A fixed path is what makes stable finding numbers real
+   rather than aspirational: **Look** reads this path, so without it every run
+   starts blind.
 3. **Export what you found to a folder**, as markdown, so it can be *measured*
    rather than mapped. This is the hand-off to `ripe`, the command-line eval: it
    runs the same questions against that folder, against Coconut, and against
@@ -107,8 +138,10 @@ Write the report from `references/report-template.md`, tl;dr first. Then offer
    measurement — a self-graded score from one conversation is a good start and
    not a benchmark.
 
-If a tool needed sign-in, list it with what it might have added. Never guess an
-unverified source into the score.
+List every source you could not check, keeping two groups apart: those that
+**needed sign-in or approval**, and those **connected to the account but not
+loaded in this session**, which the next run may reach. Say what each might have
+added. Never guess an unverified source into the score.
 
 ## Adding roles
 
@@ -116,3 +149,8 @@ One file per role in `references/roles/`: six dimensions with short scoring
 notes, and the two live tests reshaped to that role's real output. The steps
 above never change. Question ids should match `roles/<role>.md` in `ripe`, so a
 map and a measurement of the same team line up.
+
+Adding a file here changes what **Ask** offers, since that step enumerates this
+directory and requires an answer. Add roles deliberately rather than
+speculatively, and keep anything internal or for plumbing out of this directory
+so it is never offered to a user.
